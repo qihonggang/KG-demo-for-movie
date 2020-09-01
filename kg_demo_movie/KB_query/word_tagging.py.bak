@@ -51,6 +51,6 @@ class Tagger:
 if __name__ == '__main__':
     tagger = Tagger(['./external_dict/movie_title.txt', './external_dict/person_name.txt'])
     while True:
-        s = input()
+        s = raw_input()
         for i in tagger.get_word_objects(s):
-            print(i.token, i.pos)
+            print i.token, i.pos
